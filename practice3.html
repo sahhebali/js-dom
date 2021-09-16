@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .blog-01 {
+            border: 2px solid red;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 10px;
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to my Blog site</h1>
+    </header>
+    <main>
+        <section id="blog-section">
+            <header>
+                <ul id="blog-1">
+                    <li>Blog-1</li>
+                    <li>Blog-2</li>
+                    <li>Blog-3</li>
+                    <li>Blog-4</li>
+                </ul>
+            </header>
+            <article id="blog-1" class="blog-01">
+                <h3>My awesome blog-1</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium soluta ad voluptatibus, eius
+                    alias quos incidunt commodi assumenda, quod sit cumque iure similique provident reiciendis ex ipsum
+                    architecto magni reprehenderit!</p>
+
+            </article>
+
+            <article class="blog-01">
+                <h3>My awesome blog-2</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur repellat ab quia ut in id
+                    architecto dolore aliquid quaerat veniam?</p>
+            </article>
+            <article class="blog-01">
+                <h3>My awesome blog-3</h3>
+                <p>illum a neque ullam maxime sit omnis fugiat voluptatem rem iusto, voluptatibus eligendi quidem
+                    voluptatum? Incidunt in ducimus dolorem nihil aspernatur?</p>
+            </article>
+            <article class="blog-01">
+                <h3>My awesome blog-4</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, molestias saepe. Voluptas ex quis
+                    ipsum. Quos, reprehenderit corrupti! Quibusdam, quis!</p>
+            </article>
+        </section>
+    </main>
+    <script>
+        const awesomeBlogOne = document.getElementById('blog-1');
+        awesomeBlogOne.style.border = '2px solid blue'
+        const li = document.createElement('li');
+        li.innerText = 'Blog-6';
+        const ul = document.getElementById('blog-1');
+        ul.appendChild(li);
+
+        const article = document.createElement('article');
+        const h3 = document.createElement('h3');
+        h3.innerText = 'My awesome blog-5';
+        const p = document.createElement('p');
+        p.innerText = 'illum a neque ullam maxime sit omnis fugiat voluptatem rem iusto, voluptatibus eligendi quidem';
+        article.appendChild(h3);
+        article.appendChild(p);
+        const lastBlogs = document.getElementById('blog-section');
+        lastBlogs.appendChild(article);
+
+    </script>
+</body>
+
+</html>
